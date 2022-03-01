@@ -1,0 +1,3 @@
+"^(?:(?!===).|\n)*===(?:(?!===).|\n)*$"
+
+Replace === with string to match
