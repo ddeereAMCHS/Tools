@@ -110,6 +110,15 @@ esac
 cd ${BASE}/${DIR}
 git pull > /dev/null 2>&1
 
+# cleanup function for exiting early
+function cleanup() {
+  cd ${BASE}
+  rm -rf ${BASE}/${REPO}-*
+  echo "Cleaned up files before exiting"
+}
+
+trap cleanup EXIT
+
 # change file
 cd ${BASE}
 for name in $gitnames; do
