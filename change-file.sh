@@ -147,7 +147,7 @@ for name in $gitnames; do
   fi
   # add, commit, and push changes
   cd ${BASE}/${REPO}-${name}
-  git ${OP} ${FILE} > /dev/null 2>&1
+  git add -A > /dev/null 2>&1
   git commit -m "${MSG}" > /dev/null 2>&1
   pushOutput=$(git push 2>&1)
   # check if file was changed or not
