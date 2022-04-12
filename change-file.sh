@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # PREREQ: must have git installed and configured for your GitHub account
+#           if you are planning on making changes to the .github/workflow directory of a repo,
+#           your personal access token needs to have workflow scope enabled
 
 # use this file to clone all your students' repositories for an assignment, add/modify/remove a file to each repo, and commit and push those changes
 # <op> is add or rm (add will add or modify the file, rm will remove the file)
