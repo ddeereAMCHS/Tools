@@ -12,3 +12,6 @@ Enter an integer and this program will print a randomly generated list containin
 
 ## regex-match-once-and-only-once.txt
 Text file that contains regex for matching an expression once and only once. Useful for making sure output is not duplicated
+
+## /images
+Contains zip files that contain PNG files for a deck of cards, a set of chess pieces, and a set of double-6 dominoes. Useful for when making games
