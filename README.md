@@ -8,7 +8,7 @@ Use this file to clone all your students' repositories for an assignment, add/mo
 Use this file to clone all your students' repositories for an assignment
 
 ## RandomNumberGenerator.java
-Enter an integer and this program will print a randomly generated list containing 1 to the number entered (inclusive). Useful for determining random order to call on students
+Generate random numbers and other stuff. Useful for determining random order to call on students
 
 ## regex-match-once-and-only-once.txt
 Text file that contains regex for matching an expression once and only once. Useful for making sure output is not duplicated
