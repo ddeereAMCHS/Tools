@@ -15,3 +15,6 @@ Text file that contains regex for matching an expression once and only once. Use
 
 ## images/
 Contains zip files that contain PNG files for a deck of cards, a set of chess pieces, and a set of double-6 dominoes. Useful for when making games
+
+## words/
+Contains text files that contain list of words. Useful for when making games
