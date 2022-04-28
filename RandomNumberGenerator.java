@@ -11,7 +11,7 @@ public class RandomNumberGenerator {
     while (input < 1 || input > 2) {
       System.out.println("What would you like to do?");
       System.out.println("  1) read a file of names to shuffle");
-      System.out.println("  2) enter a number and get a ");
+      System.out.println("  2) enter a number and get a list of random values from 1 to that number (inclusive)");
       try { input = Integer.parseInt(in.nextLine()); }
       catch (NumberFormatException e) {}
     }
