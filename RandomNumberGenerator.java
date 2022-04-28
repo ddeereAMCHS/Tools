@@ -12,7 +12,8 @@ public class RandomNumberGenerator {
       System.out.println("What would you like to do?");
       System.out.println("  1) read a file of names to shuffle");
       System.out.println("  2) enter a number and get a ");
-      input = Integer.parseInt(in.nextLine());
+      try { input = Integer.parseInt(in.nextLine()); }
+      catch (NumberFormatException e) {}
     }
 
     switch (input) {
