@@ -20,7 +20,10 @@ public class RandomNumberGenerator {
       case 1:
         System.out.print("Enter a filename: ");
         String filename = in.nextLine();
-        readFileAndShuffle(filename);
+        ArrayList<String> names = readFileAndShuffle(filename);
+        for (String name : names) {
+          System.out.println(name);
+        }
         break;
       case 2:
         System.out.print("Enter a number: ");
@@ -34,6 +37,7 @@ public class RandomNumberGenerator {
     }
   }
 
+  // reads the given filename and shuffles the values in it
   public static void readFileAndShuffle(String filename) throws IOException {
     Scanner fin = new Scanner(new File(filename));
     ArrayList<String> names = new ArrayList<String>();
@@ -42,12 +46,7 @@ public class RandomNumberGenerator {
       names.add(fin.nextLine());
     }
 
-    names = shuffle(names);
-
-    // print values in list
-    for (String name : names) {
-      System.out.println(name);
-    }
+    return shuffle(names);
   }
 
   // generate random unique values from 1 to num
