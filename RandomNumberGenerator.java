@@ -38,7 +38,7 @@ public class RandomNumberGenerator {
   }
 
   // reads the given filename and shuffles the values in it
-  public static void readFileAndShuffle(String filename) throws IOException {
+  public static ArrayList<String> readFileAndShuffle(String filename) throws IOException {
     Scanner fin = new Scanner(new File(filename));
     ArrayList<String> names = new ArrayList<String>();
 
